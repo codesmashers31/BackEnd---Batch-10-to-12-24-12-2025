@@ -1,0 +1,63 @@
+<script>
+
+//Callback
+
+//      const fetchUserCallbackmethod = (callback)=>{
+
+//       const datas =  fetch("https://dummyjson.com/users")
+//       .then(res=>res.json())
+//       .then(data=>callback(null,data))
+//       .catch(error=>callback(error,null))
+
+//       //console.log(datas);
+      
+
+//      }
+
+// fetchUserCallbackmethod((error,data)=>{
+//     if(error){
+//         console.log('Something error',error);
+        
+//     }else{
+//          console.log('Full data',data.users);
+//     }
+
+// })
+
+// Promise
+
+// const fetchUserPromisemethod = ()=>{
+//     return fetch("https://dummyjson.com/users").then(res=>res.json())
+// }
+
+// fetchUserPromisemethod()
+// .then(data=>console.log(data.users
+// ))
+// .catch(error=>console.log(error)
+// )
+
+const fetchdatasasync = async () =>{
+
+ try{
+     
+       const res = await fetch("https://dummyjson.com/users");
+       console.log(res);
+       
+       const data = await res.json()
+    
+    console.log(data.users);
+
+ }catch(eror){
+
+    console.log("something wrong",eror);
+    
+
+ }
+    
+
+}
+
+
+fetchdatasasync()
+
+</script>
