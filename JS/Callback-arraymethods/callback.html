@@ -1,13 +1,13 @@
 <script>
-    const datas = (name,newname)=>{
+    // const datas = (name,newname)=>{
 
-        newname()
+    //     newname()
 
-        console.log('This is the value from the arguments',name);
+    //     console.log('This is the value from the arguments',name);
         
         
 
-    }
+    // }
 
 // const cbf = ()=>{
 //     console.log('Haiii');
@@ -15,10 +15,10 @@
 // }
 
 
-datas("React",()=>{
-    console.log('Hai');
+// datas("React",()=>{
+//     console.log('Hai');
     
-})
+// })
 
 
 
@@ -27,10 +27,10 @@ datas("React",()=>{
 // setTimeout(callbackfunction, time)
 
 
-const time = ()=>{
-    console.log('I am running for API!!');
+// const time = ()=>{
+//     console.log('I am running for API!!');
     
-}
+// }
 
 // setTimeout(time,2000)
 
@@ -72,6 +72,37 @@ const time = ()=>{
    
 // },1000)
 
+
+
+
+
+
+
+// const array = [1,2,3,4,5].forEach(element => {
+
+//     console.log(element+1);
+    
+    
+// });
+// console.log(array);
+
+const data = [1,2,3,4,5].map((e)=>{
+
+    // console.log(e+2);
+
+    return e+1
+    
+
+})
+console.log(data);
+
+
+const find = [1,2,3,4,5].filter((e)=>{
+
+    return e%2===0
+
+})
+console.log(find);
 
 
 
