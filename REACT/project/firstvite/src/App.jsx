@@ -1,20 +1,55 @@
-import { useState } from "react";
 
-
+import './App.css'
+// import logo from './assets/react.svg'
 const App = ()=>{
 
- const [title] = useState("This is my Stroy")
 
-  return (<>
-  
-      <div>
-        <h1>Heading   {title}</h1>
-        <p></p>
-      </div>
-  
-  </>)
 
+
+  return (
+   
+    <>
+    
+  <Navbar/>
+
+
+     
+    </>
+
+  )
+}
+
+export default App
+
+
+
+
+const Navbar = () => {
+  
+  const title = "My"
+
+
+
+  return (
+    <div className='navbar'>
+      <p>{title}</p>
+    
+    </div>
+  )
 }
 
 
-export default App;
+
+
+
+
+// const ImagesAdding = () => {
+//   return (
+//     <div>
+//       <img src="./vite.svg" alt="" />
+//       <img src={logo} alt={logo} />
+//     </div>
+//   )
+// }
+
+
