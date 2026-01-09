@@ -1,55 +1,50 @@
+import { Component } from 'react' 
 
-import './App.css'
-// import logo from './assets/react.svg'
-const App = ()=>{
+class App extends Component{
+
+constructor(props){
+    console.log('Compoent');
+  super(props)
+  this.state = {
+      
+    count:0
+
+  }
+  
+}
+
+componentDidMount(){
+  console.log('This is Mounting');
+  
+}
+
+increment = ()=>{
+  this.setState({count:this.state.count+1})
+}
 
 
+componentDidUpdate(){
+  console.log('This is Update');
+  
+}
+
+componentWillUnmount(){
+  console.log('Unmount');
+}
 
 
+render(){
   return (
-   
     <>
+    <h1>Data:{this.state.count}</h1>
+
+    <button onClick={this.increment}>Click Count</button>
     
-  <Navbar/>
-
-
-     
     </>
-
   )
+}
+
+
 }
 
 export default App
-
-
-
-
-const Navbar = () => {
-  
-  const title = "My"
-
-
-
-  return (
-    <div className='navbar'>
-      <p>{title}</p>
-    
-    </div>
-  )
-}
-
-
-
-
-
-
-// const ImagesAdding = () => {
-//   return (
-//     <div>
-//       <img src="./vite.svg" alt="" />
-//       <img src={logo} alt={logo} />
-//     </div>
-//   )
-// }
-
-
