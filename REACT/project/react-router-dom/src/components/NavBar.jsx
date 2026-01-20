@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 const NavBar = () => {
  
 
-    const baseclass=""
+    // const baseclass=""
 
 
 
@@ -12,12 +12,13 @@ const NavBar = () => {
       <div>
         Logo
       </div>
-      <div className='flex gap-15'>
+      <div className='flex gap-15 mr-10'>
 
           <NavLink to="/" className={({isActive})=>isActive?"bg-amber-300 p-2 w-20 text-center rounded text-black":""}>Home</NavLink>
           <NavLink to="/about" className={({isActive})=>isActive?"bg-amber-300 p-2 w-20 text-center rounded text-black":""}>About</NavLink>
           <NavLink to="/contect" className={({isActive})=>isActive?"bg-amber-300 p-2 w-20 text-center rounded text-black":""}>Contect</NavLink>
           <NavLink to="/login"  className={({isActive})=>isActive?"bg-blue-500 text-white p-2 w-30 text-center":""}>Login</NavLink>
+          <NavLink to="/Products"  className={({isActive})=>isActive?"bg-blue-500 text-white p-2 w-30 text-center":""}>Product</NavLink>
       </div>
     </div>
   )

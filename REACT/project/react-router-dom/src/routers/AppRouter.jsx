@@ -5,6 +5,8 @@ import About from '../components/About'
 import Contect from '../components/Contect'
 import Login from '../components/Login'
 import Layout from '../components/Layout'
+import Products from '../pages/Products'
+import ProductDetails from '../pages/ProductDetails'
 
 const AppRouter = () => {
   return (
@@ -16,8 +18,10 @@ const AppRouter = () => {
     <Route path='/about' element={<About/>} />  
     <Route path='/contect' element={<Contect/>} /> 
 
+
       </Route>
- 
+    <Route path='/Products' element={<Products/>} />
+     <Route path='/productdetails/:id' element={<ProductDetails/>} />
     <Route path='/login' element={<Login/>} />  
     </Routes>
     </>
