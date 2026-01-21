@@ -1,7 +1,1 @@
-.banner{
-    background-color: black;
-    color: antiquewhite;
-    padding: 10px;
-    height: 100px;
-    
-}
+@import 'tailwindcss'

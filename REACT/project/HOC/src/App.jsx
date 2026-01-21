@@ -1,16 +1,11 @@
-import BaseComponent from "./components/BaseComponent"
-import Home from "./components/Home"
+import React from 'react'
+import AppRoutes from './routes/AppRoutes'
 
-
-function App() {
-
-
+const App = () => {
   return (
-    <>
-      APP
-      <BaseComponent/>
-      <Home/>
-    </>
+   <>
+   <AppRoutes/>
+   </>
   )
 }
 

@@ -1,4 +1,7 @@
 import { Component } from 'react' 
+import { Route, Routes } from 'react-router-dom';
+import ImagesAdding from './components/ImagesAdding';
+import Navbar from './components/Navbar';
 
 class App extends Component{
 
@@ -36,6 +39,13 @@ componentWillUnmount(){
 render(){
   return (
     <>
+
+    <Navbar/>
+
+    <Routes>
+
+      <Route path='/home/:id' element={<ImagesAdding/>} />
+    </Routes>
     <h1>Data:{this.state.count}</h1>
 
     <button onClick={this.increment}>Click Count</button>

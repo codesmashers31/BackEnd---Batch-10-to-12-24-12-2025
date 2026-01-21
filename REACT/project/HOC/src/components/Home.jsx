@@ -1,20 +1,40 @@
-import withPage from "../hoc/withPage"
-import BaseComponent from "./BaseComponent"
+import React from 'react'
+import BahavanKeesari from './BahavanKeesari'
+
+import withAlert from '../hoc/withAlert'
+import Button from './Button'
+import withText from '../hoc/withText'
 
 
-const Homepage = withPage(BaseComponent,"Home")
+const Jananayagan_Com = withAlert(BahavanKeesari)
 
-const Home = ()=>{
+const Mytextnew = withText(Button)
+
+const Home = () => {
+
+  const onclick = ()=>{
+    alert("Text")
+  }
+
+  return (
+
+    <>
+    
+
+    <div>
+      <BahavanKeesari text={"This is BahavanKeesari"}     />
+      <Jananayagan_Com text={"This is Jananayagan"}  />
+    </div>
 
 
+    <Button text={"This is My button"}     />
+    
+   <div></div>
 
-return (<>
+    <Mytextnew text="This is my new enhance" onclinew = {onclick}  />
+    </>
 
-<Homepage/>
-
-</>)
-
+  )
 }
-
 
 export default Home

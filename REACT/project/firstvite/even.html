@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>firstvite</title>
+  </head>
+  <body>
+    
+
+    <input type="number" id="datas" />
+   
+    <button onclick="datasnew()">Click to check</button>
+  
+  <h1 id="datashowing"></h1>
+  <h1 id="datashowing1"></h1>
+
+
+
+    <script>
+      
+
+      
+      
+
+      const datasnew = ()=>{
+
+        const data = document.getElementById('datas').value
+
+        const newdata = [...data];
+
+        // alert(newdata)
+
+        console.log(newdata)
+
+       const takeevent =  newdata.filter((e)=>e%2===0)
+       const takeodd =  newdata.filter((e)=>e%2===1)
+
+       console.log(takeevent)
+
+      const newdatas = document.getElementById("datashowing") 
+const newdatas1 = document.getElementById("datashowing1") 
+         newdatas.innerHTML = takeevent
+newdatas1.innerHTML = takeodd
+      }
+
+
+    </script>
+    
+  </body>
+</html>
