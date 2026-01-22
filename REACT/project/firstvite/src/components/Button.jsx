@@ -1,9 +1,16 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
-const Button = ({nameprops}) => {
+const Button = () => {
+
+  const location = useLocation()
+
+  console.log(location.state);
+  
+   
   return (
     <div>
-      <button>{nameprops}</button>
+      <button>{location.state}</button>
     </div>
   )
 }
