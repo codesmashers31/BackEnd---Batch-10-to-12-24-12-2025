@@ -8,9 +8,9 @@ import LogProvider from './pages/provider/LogProvider.jsx'
 createRoot(document.getElementById('root')).render(
 
    <BrowserRouter>
-   <LogProvider>
+  
    <App /> 
-   </LogProvider>
+
    </BrowserRouter>
  
 )

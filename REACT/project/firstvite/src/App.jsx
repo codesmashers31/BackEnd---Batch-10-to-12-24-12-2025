@@ -55,6 +55,9 @@ render(){
     <Datas/>
 
     <button onClick={this.increment}>Click Count</button>
+
+
+    <DashBoard/>
     
     </>
   )
